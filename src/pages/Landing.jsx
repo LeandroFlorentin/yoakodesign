@@ -1,11 +1,12 @@
-import React from 'react'
-import Vector from "../assets/Vector.png"
+import Vector from "../assets/Vector.png";
+import { useMediaQuery } from 'react-responsive';
 
 const Landing = ({ reference }) => {
+  const mediaLanding = useMediaQuery({ query: "(max-width:601px)" });
   return (
     <div ref={reference} className='mt-120px'>
       <div className="background-general ht-auto p-500" >
-        <div className='ps-6 pt-5 w-container-landing'>
+        <div className={mediaLanding ? 'ps-3 pt-5 w-container-landing' : 'ps-6 pt-5 w-container-landing'}>
           <div>
             <h1 className='text-light fw-bold fs-105 overflow-y-hidden'>Hey,</h1>
             <h1 className='text-light fw-bold fs-105 overflow-y-hidden'>I'm yoako</h1>

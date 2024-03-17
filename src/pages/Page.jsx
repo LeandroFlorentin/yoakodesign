@@ -8,7 +8,7 @@ const Page = () => {
   const landingRef = useRef(null);
   const workRef = useRef(null);
   const infoRef = useRef(null);
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection, setActiveSection] = useState('landing');
 
   const scrollToRef = (ref) => {
     window.scrollTo({
@@ -24,10 +24,10 @@ const Page = () => {
       const workOffset = workRef.current.offsetTop;
       const infoOffset = infoRef.current.offsetTop;
       let activeSection = '';
-      if (scrollPosition < landingOffset) {
-        activeSection = 'home';
+      if (scrollPosition > landingOffset && scrollPosition < workOffset) {
+        activeSection = 'landing';
       }
-      else if (scrollPosition < workOffset) {
+      else if (scrollPosition > workOffset && scrollPosition < infoOffset) {
         activeSection = 'work';
       }
       else {
