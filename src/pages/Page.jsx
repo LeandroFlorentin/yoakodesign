@@ -12,7 +12,7 @@ const Page = () => {
 
   const scrollToRef = (ref) => {
     window.scrollTo({
-      top: ref.current.offsetTop,
+      top: ref.current.offsetTop - 120,
       behavior: 'smooth'
     });
   };
@@ -24,18 +24,14 @@ const Page = () => {
       const workOffset = workRef.current.offsetTop;
       const infoOffset = infoRef.current.offsetTop;
       let activeSection = '';
-      if (scrollTop === 0) {
-        activeSection = scrollTop === 0 ? 'home' : 'info';
-      } else {
-        if (scrollPosition < landingOffset) {
-          activeSection = 'home';
-        }
-        else if (scrollPosition < workOffset) {
-          activeSection = 'work';
-        }
-        else {
-          activeSection = 'info';
-        }
+      if (scrollPosition < landingOffset) {
+        activeSection = 'home';
+      }
+      else if (scrollPosition < workOffset) {
+        activeSection = 'work';
+      }
+      else {
+        activeSection = 'info';
       }
       setActiveSection(activeSection);
     };
