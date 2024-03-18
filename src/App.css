@@ -7,7 +7,7 @@
 
 .background-general {
   background-image: url("./assets/fondo-general.png");
-  background-size: 100vw 150vh;
+  background-size: 100vw 100%;
   background-repeat: no-repeat;
 }
 
@@ -16,11 +16,15 @@
 }
 
 .p-500 {
-  padding-bottom: 500px;
+  padding-bottom: 300px;
 }
 
 .me-6 {
   margin-right: 5.7rem;
+}
+
+.p-6 {
+  padding: 6rem;
 }
 
 .linea {
@@ -66,6 +70,14 @@
 
 .fs-32 {
   font-size: 32px !important;
+}
+
+.fs-48 {
+  font-size: 48px;
+}
+
+.fs-40 {
+  font-size: 40px;
 }
 
 .w-container-landing {
@@ -133,6 +145,21 @@
   animation: entradaHover .5s ease-in-out;
 }
 
+.btn-style {
+  background-color: rgba(62, 195, 114, 1) !important;
+  color: white !important;
+}
+
+.btn-style:hover {
+  background-color: rgba(62, 195, 114, 1) !important;
+  color: white !important;
+}
+
+.btn-style:focus {
+  background-color: rgba(62, 195, 114, 1) !important;
+  color: white !important;
+}
+
 @keyframes entradaHover {
   0% {
     left: -50px;
@@ -141,4 +168,32 @@
   100% {
     left: 0
   }
+}
+
+.background-work {
+  position: relative;
+  top: -150px;
+  background-color: rgba(24, 24, 24, 1);
+}
+
+.rounded-150 {
+  border-radius: 150px;
+}
+
+.tamano-video {
+  width: auto;
+  max-width: 450px;
+  max-height: 310px;
+  height: auto;
+}
+
+.image-promo {
+  width: 100vw;
+  position: absolute;
+  left: 0;
+}
+
+.padding-image {
+  padding-top: 7rem;
+  padding-bottom: 10rem;
 }
