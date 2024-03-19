@@ -5,6 +5,13 @@
   overflow-x: hidden;
 }
 
+@font-face {
+  font-family: "Hanson";
+  src: url("../src/fonts/Hanson-Bold.otf");
+  font-weight: bold;
+  font-style: bold;
+}
+
 body {
   background-color: #000000 !important;
 }
@@ -67,6 +74,12 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.hanson {
+  font-family: "Hanson";
+  font-weight: bold;
+  font-size: 88px;
 }
 
 .mt-120px {
