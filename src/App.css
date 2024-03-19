@@ -53,9 +53,9 @@ body {
   background-color: rgba(24, 24, 24, 1);
   border-radius: 25px;
   z-index: 99999999999;
-  position: fixed;
-  top: 1.6rem;
-  min-width: 79.8%;
+  top: calc(5% + 1.6rem);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .mt-120px {
