@@ -8,8 +8,10 @@
 @font-face {
   font-family: "Hanson";
   src: url("../src/fonts/Hanson/Hanson-Bold.otf");
-  font-weight: bold;
-  font-style: bold;
+}
+@font-face {
+  font-family: "ArgentumLight";
+  src: url("../src/fonts/Argentum/ArgentumSans-Light.ttf");
 }
 
 body {
@@ -80,6 +82,13 @@ body {
   font-family: "Hanson";
   font-weight: bold;
   font-size: 88px;
+}
+
+.ar-light {
+  font-family: "ArgentumLight";
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 27.6px;
 }
 
 .mt-120px {

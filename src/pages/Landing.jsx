@@ -14,8 +14,8 @@ const Landing = ({ reference }) => {
           }
         >
           <div>
-            <h1 className="text-light overflow-y-hidden hanson">Hey,</h1>
-            <h1 className="text-light overflow-y-hidden hanson">I'm yoako.</h1>
+            <h1 className="text-light hanson overflow-y-hidden">Hey,</h1>
+            <h1 className="text-light hanson overflow-y-hidden">I'm yoako.</h1>
           </div>
           <div className="pt-5">
             <button className="btn fs-18 text-light border rounded-pill ps-4 pe-4 pt-1 pb-1 me-3">
@@ -31,7 +31,7 @@ const Landing = ({ reference }) => {
               & More
             </button>
           </div>
-          <p className="text-light fs-24 mt-5">
+          <p className="text-light ar-light mt-5">
             I’m a multidisciplinary digital designer & video editor with a
             strong interest in modern & technological styles.
           </p>
