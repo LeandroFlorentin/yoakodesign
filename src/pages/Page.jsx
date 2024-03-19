@@ -8,12 +8,12 @@ const Page = () => {
   const landingRef = useRef(null);
   const workRef = useRef(null);
   const infoRef = useRef(null);
-  const [activeSection, setActiveSection] = useState('landing');
+  const [activeSection, setActiveSection] = useState("landing");
 
   const scrollToRef = (ref) => {
     window.scrollTo({
       top: ref.current.offsetTop - 120,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   };
 
@@ -23,32 +23,36 @@ const Page = () => {
       const landingOffset = landingRef.current.offsetTop;
       const workOffset = workRef.current.offsetTop;
       const infoOffset = infoRef.current.offsetTop;
-      let activeSection = '';
+      let activeSection = "";
       if (scrollPosition > landingOffset && scrollPosition < workOffset) {
-        activeSection = 'landing';
-      }
-      else if (scrollPosition > workOffset && scrollPosition < infoOffset) {
-        activeSection = 'work';
-      }
-      else {
-        activeSection = 'info';
+        activeSection = "landing";
+      } else if (scrollPosition > workOffset && scrollPosition < infoOffset) {
+        activeSection = "work";
+      } else {
+        activeSection = "info";
       }
       setActiveSection(activeSection);
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [activeSection]);
 
   return (
-    <div>
-      <NavBar scrollToRef={scrollToRef} activeSection={activeSection} landingRef={landingRef} workRef={workRef} infoRef={infoRef} />
+    <div className="div-root">
+      <NavBar
+        scrollToRef={scrollToRef}
+        activeSection={activeSection}
+        landingRef={landingRef}
+        workRef={workRef}
+        infoRef={infoRef}
+      />
       <Landing reference={landingRef} />
       <Work reference={workRef} />
       <Info reference={infoRef} />
     </div>
-  )
-}
+  );
+};
 
 export default Page;
