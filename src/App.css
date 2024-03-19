@@ -47,13 +47,23 @@ body {
   margin-left: 12rem;
 }
 
+.width-img-ig {
+  width: 33px;
+  height: 33px;
+}
+
+.width-img-dc {
+  width: 27px;
+  height: 27px;
+}
+
 .nav {
   height: auto;
   min-height: 60px;
   background-color: rgba(24, 24, 24, 1);
   border-radius: 25px;
   z-index: 99999999999;
-  top: calc(5% + 1.6rem);
+  top: calc(6% + 1.6rem);
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -67,12 +77,16 @@ body {
 }
 
 .tamano-logo {
-  width: 184px;
-  height: 79px;
+  width: 132px;
+  height: 40px;
 }
 
 .ps-6 {
   padding-left: 7.5rem;
+}
+
+.fs-16 {
+  font-size: 16px;
 }
 
 .fs-18 {

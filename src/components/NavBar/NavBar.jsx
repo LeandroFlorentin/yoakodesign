@@ -15,22 +15,22 @@ const NavBar = ({
       description: "home",
       valor: "landing",
       className: mediaNav
-        ? "fs-5 text-light pointer col-4 text-center pb-2"
-        : "fs-5 text-light me-6 pointer",
+        ? "fs-16 text-light pointer col-4 text-center pb-2"
+        : "fs-16 text-light me-6 pointer",
     },
     {
       description: "work",
       valor: "work",
       className: mediaNav
-        ? "fs-5 text-light pointer col-4 text-center pb-2"
-        : "fs-5 text-light me-6 pointer",
+        ? "fs-16 text-light pointer col-4 text-center pb-2"
+        : "fs-16 text-light me-6 pointer",
     },
     {
       description: "info",
       valor: "info",
       className: mediaNav
-        ? "fs-5 text-light pointer col-4 text-center pb-2"
-        : "fs-5 text-light me-6 pointer",
+        ? "fs-16 text-light pointer col-4 text-center pb-2"
+        : "fs-16 text-light me-6 pointer",
     },
   ];
   return (
@@ -80,10 +80,10 @@ const NavBar = ({
               : "d-flex align-items-center me-5"
           }
         >
-          <img className="me-4" src={discord} alt="discord" />
+          <img className="me-4 width-img-dc" src={discord} alt="discord" />
           <div className="linea me-2 ms-2"></div>
           <a href="https://www.instagram.com/jmartorano_/" target="_blank">
-            <img className="ms-4" src={instagram} alt="instagram" />
+            <img className="ms-4 width-img-ig" src={instagram} alt="instagram" />
           </a>
         </div>
       </div>
