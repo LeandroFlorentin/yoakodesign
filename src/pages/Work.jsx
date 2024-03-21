@@ -12,13 +12,11 @@ const Work = ({ reference }) => {
         mediaLanding ? "p-5" : "p-6"
       } pt-5 pb-5 m-0 rounded-150`}
     >
-      <h3 className="fs-48 text-light overflow-hidden fw-bold">
-        Video edition
-      </h3>
-      <p className="text-light m-0">
+      <h3 className="text-light overflow-hidden video-title">Video edition</h3>
+      <p className="text-light m-0 mt-3 work-txt">
         Videos of ~15, 20 minutes. Shorts, reels, tiktok.
       </p>
-      <p className="text-light">
+      <p className="text-light work-txt">
         Edition focused on viewer retention & thumbnails that seek the public’s
         attention.
       </p>

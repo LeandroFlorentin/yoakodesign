@@ -5,6 +5,7 @@ const Landing = ({ reference }) => {
   const mediaLanding = useMediaQuery({ query: "(max-width:601px)" });
   return (
     <div ref={reference} className="mt-120px">
+      {/* mt-120px video section black ** */}
       <div className="background-general ht-auto p-500">
         <div
           className={
@@ -14,24 +15,25 @@ const Landing = ({ reference }) => {
           }
         >
           <div>
-            <h1 className="text-light hanson overflow-y-hidden">Hey,</h1>
-            <h1 className="text-light hanson overflow-y-hidden">I'm yoako.</h1>
+            <h1 className="text-light iam overflow-y-hidden">Hey,</h1>
+            <h1 className="text-light iam overflow-y-hidden">I'm yoako.</h1>
           </div>
           <div className="pt-5">
-            <button className="btn fs-18 text-light border rounded-pill ps-4 pe-4 pt-1 pb-1 me-3">
+            {/* Rompi los botones cuando les cambie la : Fuente xd */}
+            <button className="btn btn-txt text-light border rounded-pill ps-4 pe-4 pt-1 pb-1 me-3">
               Digital design
             </button>
-            <button className="btn fs-18 text-light border rounded-pill ps-4 pe-4 pt-1 pb-1 me-3">
+            <button className="btn btn-txt text-light border rounded-pill ps-4 pe-4 pt-1 pb-1 me-3">
               Video edition
             </button>
-            <button className="btn fs-18 text-light border rounded-pill ps-4 pe-4 pt-1 pb-1 me-3">
+            <button className="btn btn-txt text-light border rounded-pill ps-4 pe-4 pt-1 pb-1 me-3">
               UX | UI
             </button>
-            <button className="btn fs-18 text-light border rounded-pill ps-4 pe-4 pt-1 pb-1 me-3">
+            <button className="btn btn-txt text-light border rounded-pill ps-4 pe-4 pt-1 pb-1 me-3">
               & More
             </button>
           </div>
-          <p className="text-light ar-light mt-5">
+          <p className="text-light about-txt mt-5">
             I’m a multidisciplinary digital designer & video editor with a
             strong interest in modern & technological styles.
           </p>

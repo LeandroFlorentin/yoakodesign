@@ -13,6 +13,10 @@
   font-family: "ArgentumLight";
   src: url("../src/fonts/Argentum/ArgentumSans-Light.ttf");
 }
+@font-face {
+  font-family: "ArgentumExtraLight";
+  src: url("../src/fonts/Argentum/ArgentumSans-ExtraLight.ttf");
+}
 
 body {
   background-color: #000000 !important;
@@ -78,17 +82,41 @@ body {
   box-shadow: 0px 4px 4px 0px #00000040;
 }
 
-.hanson {
+.iam {
   font-family: "Hanson";
   font-weight: bold;
   font-size: 88px;
 }
 
-.ar-light {
+.video-title {
+  font-family: "Hanson";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 49.97px;
+  text-align: left;
+}
+
+.about-txt {
   font-family: "ArgentumLight";
   font-weight: 300;
   font-size: 24px;
   line-height: 27.6px;
+}
+
+.work-txt {
+  font-family: "ArgentumLight";
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 27.6px;
+  text-align: left;
+}
+
+.btn-txt {
+  font-family: "ArgentumLight" !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  line-height: 20.7px !important;
+  text-align: left !important;
 }
 
 .mt-120px {
