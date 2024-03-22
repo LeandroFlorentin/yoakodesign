@@ -40,17 +40,19 @@ const Page = () => {
   }, [activeSection]);
 
   return (
-    <div className="div-root">
-      <NavBar
-        scrollToRef={scrollToRef}
-        activeSection={activeSection}
-        landingRef={landingRef}
-        workRef={workRef}
-        infoRef={infoRef}
-      />
-      <Landing reference={landingRef} />
-      <Work reference={workRef} />
-      <Info reference={infoRef} />
+    <div className="container">
+      <div className="div-root">
+        <NavBar
+          scrollToRef={scrollToRef}
+          activeSection={activeSection}
+          landingRef={landingRef}
+          workRef={workRef}
+          infoRef={infoRef}
+        />
+        <Landing reference={landingRef} />
+        <Work reference={workRef} />
+        <Info reference={infoRef} />
+      </div>
     </div>
   );
 };
