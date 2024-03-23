@@ -9,10 +9,12 @@
   font-family: "Hanson";
   src: url("../src/fonts/Hanson/Hanson-Bold.otf");
 }
+
 @font-face {
   font-family: "ArgentumLight";
   src: url("../src/fonts/Argentum/ArgentumSans-Light.ttf");
 }
+
 @font-face {
   font-family: "ArgentumExtraLight";
   src: url("../src/fonts/Argentum/ArgentumSans-ExtraLight.ttf");
@@ -74,9 +76,6 @@ body {
   background-color: rgba(24, 24, 24, 1);
   border-radius: 25px;
   z-index: 99999999999;
-  top: 65px;
-  left: 50%;
-  transform: translate(-50%, -50%);
   box-shadow: 0px 4px 4px 0px #00000040;
 }
 
@@ -275,4 +274,10 @@ body {
 .padding-image {
   padding-top: 7rem;
   padding-bottom: 10rem;
+}
+
+.edit {
+  max-width: 350px;
+  width: auto;
+  height: 623px;
 }

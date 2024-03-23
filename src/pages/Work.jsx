@@ -2,15 +2,15 @@ import SectionVideos from "../components/SectionVideos/SectionVideos";
 import Promo from "../assets/PROMO.png";
 import Card from "../components/Card/Card.jsx";
 import { useMediaQuery } from "react-responsive";
+import Fondo from "../assets/fondo-gen.png";
 
 const Work = ({ reference }) => {
   const mediaLanding = useMediaQuery({ query: "(max-width:500px)" });
   return (
     <div
       ref={reference}
-      className={`h-auto background-work ${
-        mediaLanding ? "p-5" : "p-6"
-      } pt-5 pb-5 m-0 rounded-150`}
+      className={`h-auto background-work ${mediaLanding ? "p-5" : "p-6"
+        } pt-5 pb-5 m-0 rounded-150`}
     >
       <h3 className="text-light overflow-hidden video-title">Video edition</h3>
       <p className="text-light m-0 mt-3 work-txt">
@@ -24,6 +24,53 @@ const Work = ({ reference }) => {
         <SectionVideos title="Gaming" images={[1, 2]} />
         <SectionVideos title="Educational" images={[1, 2]} />
         <SectionVideos title="Music" images={[1, 2]} />
+        <div className="mt-5">
+          <h3 className="text-light overflow-hidden video-title">Short from edits</h3>
+          <p className="text-light m-0 mt-3 work-txt">
+            Shorts, reels, tiktok.
+          </p>
+          <p className="text-light work-txt">
+            Edits from 30s to 3 minutes. Quality edits adapted to the fastness of social media. Attention to detail.
+          </p>
+          <div className="d-flex justify-content-around flex-wrap">
+            <video
+              autoPlay
+              loop
+              src={"./"}
+              className="edit col-12 col-md-11 mt-5 rounded-4"
+              style={{ background: "black" }}
+            >
+              <source />
+            </video>
+            <video
+              autoPlay
+              loop
+              src={"./"}
+              className="edit col-12 col-md-11 mt-5 rounded-4"
+              style={{ background: "black" }}
+            >
+              <source />
+            </video>
+            <video
+              autoPlay
+              loop
+              src={"./"}
+              className="edit col-12 col-md-11 mt-5 rounded-4"
+              style={{ background: "black" }}
+            >
+              <source />
+            </video>
+            <video
+              autoPlay
+              loop
+              src={"./"}
+              className="edit col-12 col-md-11 mt-5 rounded-4"
+              style={{ background: "black" }}
+            >
+              <source />
+            </video>
+          </div>
+        </div>
       </div>
       <div className="padding-image mb-5">
         <img className="image-promo" src={Promo} alt="Promo" />
