@@ -34,7 +34,7 @@ const NavBar = ({
     },
   ];
   return (
-    <div className="row m-0 p-0 d-flex align-items-center justify-content-between nav mt-4">
+    <div className="row m-0 p-0 d-flex align-items-center justify-content-between position-sticky nav mt-4">
       <div className="col-12 col-lg-2">
         <img
           src={logo}

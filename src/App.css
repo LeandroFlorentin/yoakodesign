@@ -2,7 +2,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
 }
 
 @font-face {
@@ -76,6 +75,7 @@ body {
   background-color: rgba(24, 24, 24, 1);
   border-radius: 25px;
   z-index: 99999999999;
+  top: 1.5rem;
   box-shadow: 0px 4px 4px 0px #00000040;
 }
 
@@ -250,12 +250,17 @@ body {
 
 .background-work {
   position: relative;
-  top: -150px;
   background-color: rgba(24, 24, 24, 1);
 }
 
-.rounded-150 {
-  border-radius: 150px;
+.rounded-150-top {
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+}
+
+.rounded-150-bottom {
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
 }
 
 .tamano-video {
@@ -266,14 +271,7 @@ body {
 }
 
 .image-promo {
-  width: 100vw;
-  position: absolute;
-  left: 0;
-}
-
-.padding-image {
-  padding-top: 7rem;
-  padding-bottom: 10rem;
+  width: 100%;
 }
 
 .edit {
