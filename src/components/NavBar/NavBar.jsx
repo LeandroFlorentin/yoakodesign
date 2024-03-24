@@ -15,22 +15,22 @@ const NavBar = ({
       description: "home",
       valor: "landing",
       className: mediaNav
-        ? "fs-16 text-light pointer col-4 text-center pb-2"
-        : "fs-16 text-light me-6 pointer",
+        ? "fs-16 text-light pointer col-4 text-center pb-2 position-relative overflow-hidden"
+        : "fs-16 text-light me-6 pointer position-relative overflow-hidden",
     },
     {
       description: "work",
       valor: "work",
       className: mediaNav
-        ? "fs-16 text-light pointer col-4 text-center pb-2"
-        : "fs-16 text-light me-6 pointer",
+        ? "fs-16 text-light pointer col-4 text-center pb-2 position-relative overflow-hidden"
+        : "fs-16 text-light me-6 pointer position-relative overflow-hidden",
     },
     {
       description: "info",
       valor: "info",
       className: mediaNav
-        ? "fs-16 text-light pointer col-4 text-center pb-2"
-        : "fs-16 text-light me-6 pointer",
+        ? "fs-16 text-light pointer col-4 text-center pb-2 position-relative overflow-hidden"
+        : "fs-16 text-light me-6 pointer position-relative overflow-hidden",
     },
   ];
   return (

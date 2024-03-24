@@ -1,13 +1,22 @@
+import { useState } from "react";
 import SectionVideos from "../components/SectionVideos/SectionVideos";
 import Promo from "../assets/PROMO.png";
 import Card from "../components/Card/Card.jsx";
 import { useMediaQuery } from "react-responsive";
-import Fondo from "../assets/fondo-gen.png";
+import Project1 from "../assets/projects/project_1.png";
+import Modal from "../components/Modal/Modal.jsx";
+import Modal1 from "../assets/Modal/Modal_1.png"
 
 const Work = ({ reference }) => {
   const mediaLanding = useMediaQuery({ query: "(max-width:500px)" });
+  const [modal, setModal] = useState(0);
   return (
-    <div>
+    <div ref={reference}>
+      <Modal>
+        {
+          modal === 1 ? <img className="w-100" src={Modal1} alt="Modal1" /> : null
+        }
+      </Modal>
       <div
         ref={reference}
         className={`h-auto background-work ${mediaLanding ? "p-5" : "p-6"
@@ -76,7 +85,6 @@ const Work = ({ reference }) => {
       </div>
       <img className="image-promo" src={Promo} alt="Promo" />
       <div
-        ref={reference}
         className={`h-auto background-work ${mediaLanding ? "p-5" : "p-6"
           } pt-5 pb-5 m-0 rounded-150-bottom`}
       >
@@ -102,7 +110,7 @@ const Work = ({ reference }) => {
               Contact me
             </button>
             <div className="pt-5">
-              <Card />
+              <Card className="proyecto-1 rounded-5" src={Project1} modal="1" setModal={setModal} alt="Poject 1" toggle="modal" target="#exampleModal" />
             </div>
           </div>
         </div>

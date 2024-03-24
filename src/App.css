@@ -279,3 +279,65 @@ body {
   width: auto;
   height: 623px;
 }
+
+.proyecto-1 {
+  border: 1px solid transparent;
+  position: relative;
+  transition: .5s ease-in-out all;
+  overflow: hidden;
+}
+
+.proyecto-1:hover {
+  border: 1px solid rgba(62, 195, 114, 1);
+}
+
+.proyecto-1:hover::after {
+  content: "Arco | Japanese |\A Restaurant.";
+  color: white;
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  z-index: 100;
+  font-size: 40px;
+  white-space: pre;
+  animation: bottomTitle 1000ms ease;
+}
+
+.proyecto-1:hover::before {
+  content: "Logo & Brand identity";
+  color: rgba(62, 195, 114, 1);
+  position: absolute;
+  bottom: 30px;
+  left: 60px;
+  z-index: 100;
+  font-size: 20px;
+  animation: bottomParrafo 1000ms ease;
+}
+
+@keyframes bottomTitle {
+  from {
+    bottom: -80px;
+  }
+
+  to {
+    bottom: 60px;
+  }
+}
+
+@keyframes bottomParrafo {
+  from {
+    bottom: -110px;
+  }
+
+  to {
+    bottom: 30px;
+  }
+}
+
+.zindexModal {
+  z-index: 9999999999 !important;
+}
+
+.b-black {
+  background-color: #000000;
+}
