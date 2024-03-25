@@ -4,7 +4,7 @@ import { useMediaQuery } from "react-responsive";
 const Landing = ({ reference }) => {
   return (
     <div ref={reference} className="mt-120px">
-      <div className="background-general ht-auto p-500">
+      <div className="background-general ht-auto p-300">
         <div>
           <div style={{ width: "775px" }}>
             <h1 className="text-light iam overflow-y-hidden">Hey,</h1>

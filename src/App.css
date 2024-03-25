@@ -27,8 +27,12 @@ body {
   cursor: pointer;
 }
 
-.p-500 {
+.p-300 {
   padding-bottom: 300px;
+}
+
+.p-200 {
+  padding-bottom: 200px;
 }
 
 .me-6 {
@@ -283,7 +287,7 @@ body {
 .proyecto-1 {
   border: 1px solid transparent;
   position: relative;
-  transition: .5s ease-in-out all;
+  transition: 0.5s ease-in-out all;
   overflow: hidden;
 }
 
