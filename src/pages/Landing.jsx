@@ -28,11 +28,14 @@ const Landing = ({ reference }) => {
               strong interest in modern & technological styles.
             </p>
           </div>
-          <div className="d-flex align-items-center mt-5 justify-content-between">
+          <div className="d-flex align-items-center mt-5 justify-content-start">
             <button className="btn btn-light fs-32 rounded-pill fw-semibold ps-5 pe-5 pt-2 pb-2">
               Let's chat!
             </button>
-            <div className="d-flex flex-column align-items-center me-5">
+            <div
+              className="d-flex flex-column align-items-center me-5"
+              style={{ marginLeft: "400px" }}
+            >
               <p className="text-light fw-semibold">Scroll down</p>
               <img
                 className="fs-6 scroll-down"
