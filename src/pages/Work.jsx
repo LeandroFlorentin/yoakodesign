@@ -10,9 +10,15 @@ import Modal1 from "../assets/Modal/Modal_1.png"
 const Work = ({ reference }) => {
   const mediaLanding = useMediaQuery({ query: "(max-width:500px)" });
   const [modal, setModal] = useState(0);
+  function devolverTitle(modal) {
+    switch (modal) {
+      case 1: return "First Project";
+      default: return "";
+    }
+  }
   return (
     <div ref={reference}>
-      <Modal>
+      <Modal title={devolverTitle(modal)}>
         {
           modal === 1 ? <img className="w-100" src={Modal1} alt="Modal1" /> : null
         }

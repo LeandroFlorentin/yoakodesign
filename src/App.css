@@ -341,3 +341,29 @@ body {
 .b-black {
   background-color: #000000;
 }
+
+.b-white {
+  background-color: #222222 !important;
+}
+
+.border-top-modal {
+  border-top: 1px solid rgba(62, 195, 114, 1) !important;
+}
+
+.border-bottom-modal {
+  border-bottom: 1px solid rgba(62, 195, 114, 1) !important;
+}
+
+.img-card {
+  transition: 500ms ease all;
+}
+
+.img-card:hover {
+  filter: opacity(0.7) blur(1px);
+  transform: scale(1.1);
+}
+
+.custom-close {
+  color: white !important;
+  opacity: 1;
+}
