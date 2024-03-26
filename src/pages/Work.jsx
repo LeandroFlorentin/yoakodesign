@@ -6,6 +6,7 @@ import { useMediaQuery } from "react-responsive";
 import Project1 from "../assets/projects/project_1.png";
 import Modal from "../components/Modal/Modal.jsx";
 import Modal1 from "../assets/Modal/Modal_1.png";
+import ThumbnailCard from "../components/ThumbnailCard/ThumbnailCard.jsx";
 
 const Work = ({ reference }) => {
   const mediaLanding = useMediaQuery({ query: "(max-width:500px)" });
@@ -18,6 +19,7 @@ const Work = ({ reference }) => {
         return "";
     }
   }
+
   return (
     <div ref={reference}>
       <Modal title={devolverTitle(modal)}>
@@ -105,20 +107,21 @@ const Work = ({ reference }) => {
       >
         <div className="pt-5">
           <div className="row m-0">
-            <h3 className="col-12 fs-48 text-light overflow-hidden fw-bold">
+            <h3 className="col-12 fs-48 text-light overflow-hidden fw-bold design-title">
               Design
             </h3>
             <div className="col-12">
-              <p className="col-12 col-md-8 col-sm-12 text-light fs-24">
+              <p className="col-12 col-md-8 col-sm-12 text-light design-txt">
                 Find out how i helped these brands to seek the most approachable
                 result to perfection on every design aspect, on every detail.{" "}
               </p>
             </div>
             <div className="col-12">
-              <p className="col-12 col-md-8 col-sm-12 text-light fs-24">
-                The projects under this title are pieces that search that level
-                of quality, that tell a story, and communicate the brand’s
-                desire through graphic and practical designing.
+              <p className="col-12 col-md-8 col-sm-12 text-light design-txt">
+                The projects under this title are pieces that search that{" "}
+                <span style={{ color: "#3EC372" }}>level of quality</span>, that
+                tell a story, and communicate the brand’s desire through graphic
+                and practical designing.
               </p>
             </div>
             <button className="btn btn-light col-12 col-md-4 col-lg-3 fs-4 rounded-pill fw-semibold mt-5">
@@ -134,6 +137,23 @@ const Work = ({ reference }) => {
                 toggle="modal"
                 target="#exampleModal"
               />
+            </div>
+          </div>
+        </div>
+        <div className="pt-5">
+          <div className="row m-0">
+            <h3 className="col-12 fs-48 text-light overflow-hidden fw-bold thumnail-title">
+              Thumbnails
+            </h3>
+            <div className="col-12">
+              <p className="col-12 col-md-8 col-sm-12 text-light  thumnail-txt">
+                Maximizing clicks on impressions percentage. Catch the viewers
+                attention every time with the most clickbait thumbnails on the
+                market. Perfect fit for your title.
+              </p>
+            </div>
+            <div className="d-flex justify-content-around flex-wrap">
+              <ThumbnailCard />
             </div>
           </div>
         </div>
