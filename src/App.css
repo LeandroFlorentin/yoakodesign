@@ -97,6 +97,37 @@ body {
   text-align: left;
 }
 
+.thumnail-title {
+  font-family: "Hanson";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 49.97px;
+  text-align: left;
+}
+
+.thumnail-txt {
+  font-family: "ArgentumLight";
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 27.6px;
+  text-align: left;
+}
+
+.design-title {
+  font-family: "Hanson";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 49.97px;
+  text-align: left;
+}
+.design-txt {
+  font-family: "ArgentumLight";
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 27.6px;
+  text-align: left;
+}
+
 .about-txt {
   font-family: "ArgentumLight";
   font-weight: 300;
