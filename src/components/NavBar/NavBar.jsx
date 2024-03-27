@@ -1,4 +1,4 @@
-import logo from "../../assets/logo.png";
+import logo from "../../assets/svg/logo.svg";
 import instagram from "../../assets/instagram.png";
 import discord from "../../assets/discord.png";
 import { useMediaQuery } from "react-responsive";
@@ -83,7 +83,11 @@ const NavBar = ({
           <img className="me-4 width-img-dc" src={discord} alt="discord" />
           <div className="linea me-2 ms-2"></div>
           <a href="https://www.instagram.com/jmartorano_/" target="_blank">
-            <img className="ms-4 width-img-ig" src={instagram} alt="instagram" />
+            <img
+              className="ms-4 width-img-ig"
+              src={instagram}
+              alt="instagram"
+            />
           </a>
         </div>
       </div>
