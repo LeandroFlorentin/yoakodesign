@@ -19,6 +19,11 @@
   src: url("../src/fonts/Argentum/ArgentumSans-ExtraLight.ttf");
 }
 
+@font-face {
+  font-family: "ArgentumMedium";
+  src: url("../src/fonts/Argentum/ArgentumSans-MediumItalic.ttf");
+}
+
 body {
   background-color: #000000 !important;
 }
@@ -157,6 +162,74 @@ body {
   font-weight: 400 !important;
   line-height: 20.7px !important;
   text-align: left !important;
+}
+
+.btn-contact {
+  width: 441px;
+  height: 87px;
+  border-radius: 35px;
+  opacity: 0px;
+  margin-left: 20px;
+}
+
+.btn-contact-text {
+  font-family: "ArgentumLight";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 41.4px;
+  text-align: left;
+}
+
+.aboutme-txt {
+  font-family: "ArgentumLight";
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 27.6px;
+  text-align: left;
+}
+
+.info-title {
+  font-family: "ArgentumLight";
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 36.8px;
+  text-align: left;
+}
+
+.aboutme-title {
+  font-family: "Hanson";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 49.97px;
+  text-align: left;
+}
+
+.jm-text {
+  font-family: "ArgentumMedium";
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 27.6px;
+  text-align: left;
+}
+
+.logo-about {
+  width: 138px;
+  height: 42px;
+  top: 9245px;
+  left: 1116px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.photo-about {
+  width: 330px;
+  height: 333px;
+  top: 9331px;
+  left: 933px;
+  gap: 0px;
+  border-radius: 35px 0px 0px 0px;
+  opacity: 0px;
 }
 
 .gap-3 {
