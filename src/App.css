@@ -128,6 +128,13 @@ body {
   text-align: left;
 }
 
+.contact-text {
+  font-family: "ArgentumLight";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36.8px;
+}
+
 .about-txt {
   font-family: "ArgentumLight";
   font-weight: 300;
