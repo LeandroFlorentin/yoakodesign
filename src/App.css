@@ -70,7 +70,13 @@ body {
 .div-root {
   background-image: url("./assets/fondo-gen.png") !important;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: contain 120%;
+}
+
+.background-info {
+  background-image: url("./assets/about/background-about.png") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .width-img-ig {
@@ -130,6 +136,7 @@ body {
   line-height: 49.97px;
   text-align: left;
 }
+
 .design-txt {
   font-family: "ArgentumLight";
   font-size: 24px;
@@ -223,8 +230,7 @@ body {
   align-self: flex-end;
 }
 
-.photo-about {
-}
+.photo-about {}
 
 .layers {
   gap: 53px;

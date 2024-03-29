@@ -3,6 +3,7 @@ import Landing from "./Landing.jsx";
 import NavBar from "../components/NavBar/NavBar.jsx";
 import Work from "./Work.jsx";
 import Info from "./Info.jsx";
+import Contact from "./Contact.jsx";
 
 const Page = () => {
   const landingRef = useRef(null);
@@ -12,7 +13,7 @@ const Page = () => {
 
   const scrollToRef = (ref) => {
     window.scrollTo({
-      top: ref.current.offsetTop - 120,
+      top: ref.current.offsetTop - 84,
       behavior: "smooth",
     });
   };
@@ -49,9 +50,10 @@ const Page = () => {
           workRef={workRef}
           infoRef={infoRef}
         />
-        <Landing reference={landingRef} />
+        <Landing reference={landingRef} scrollToRef={scrollToRef} workRef={workRef} />
         <Work reference={workRef} />
         <Info reference={infoRef} />
+        {/* <Contact /> */}
       </div>
     </div>
   );

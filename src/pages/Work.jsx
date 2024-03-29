@@ -29,9 +29,8 @@ const Work = ({ reference }) => {
       </Modal>
       <div
         ref={reference}
-        className={`h-auto background-work ${
-          mediaLanding ? "p-5" : "p-6"
-        } pt-5 pb-5 m-0 rounded-150-top`}
+        className={`h-auto background-work ${mediaLanding ? "p-5" : "p-6"
+          } pt-5 pb-5 m-0 rounded-150-top`}
       >
         <h3 className="text-light overflow-hidden video-title">
           Video edition
@@ -101,9 +100,8 @@ const Work = ({ reference }) => {
       </div>
       <img className="image-promo" src={Promo} alt="Promo" />
       <div
-        className={`h-auto background-work ${
-          mediaLanding ? "p-5" : "p-6"
-        } pt-5 pb-5 m-0 rounded-150-bottom`}
+        className={`h-auto background-work ${mediaLanding ? "p-5" : "p-6"
+          } pt-5 pb-5 m-0 rounded-150-bottom`}
       >
         <div className="pt-5">
           <div className="row m-0">

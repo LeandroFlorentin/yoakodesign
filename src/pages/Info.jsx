@@ -9,9 +9,9 @@ import flag from "../assets/flag.png";
 import CV from "/CV-MARTORANOPEROZZI.pdf?url";
 const Info = ({ reference }) => {
   return (
-    <div ref={reference} className="ht-100">
+    <div ref={reference} className="ht-100 mb-5">
       <div className="container d-flex text-light mt-120px flex-column gap-7">
-        <div className="d-flex justify-content-between">
+        <div className="d-flex justify-content-between background-info">
           <div className="d-flex flex-column">
             <h4 className="info-title">INFO</h4>
             <h6 className="aboutme-title">About me.</h6>

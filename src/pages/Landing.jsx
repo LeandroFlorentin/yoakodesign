@@ -1,10 +1,9 @@
 import Vector from "../assets/Vector.png";
-import { useMediaQuery } from "react-responsive";
 
-const Landing = ({ reference }) => {
+const Landing = ({ reference, scrollToRef, workRef }) => {
   return (
-    <div ref={reference} className="mt-120px">
-      <div className="background-general ht-auto p-300">
+    <div ref={reference} className="mt-3 pb-5">
+      <div className="background-general ht-auto">
         <div>
           <div style={{ width: "775px" }}>
             <h1 className="text-light iam overflow-y-hidden">Hey,</h1>
@@ -23,7 +22,7 @@ const Landing = ({ reference }) => {
                 & More
               </button>
             </div>
-            <p className="text-light about-txt mt-5">
+            <p className="text-start text-light about-txt mt-5">
               I’m a multidisciplinary digital designer & video editor with a
               strong interest in modern & technological styles.
             </p>
@@ -33,8 +32,9 @@ const Landing = ({ reference }) => {
               Let's chat!
             </button>
             <div
-              className="d-flex flex-column align-items-center me-5"
+              className="pointer d-flex flex-column align-items-center me-5"
               style={{ marginLeft: "400px" }}
+              onClick={() => scrollToRef(workRef)}
             >
               <p className="text-light fw-semibold">Scroll down</p>
               <img
