@@ -9,6 +9,7 @@ const Page = () => {
   const landingRef = useRef(null);
   const workRef = useRef(null);
   const infoRef = useRef(null);
+  const contactRef = useRef(null);
   const [activeSection, setActiveSection] = useState("landing");
 
   const scrollToRef = (ref) => {
@@ -24,13 +25,18 @@ const Page = () => {
       const landingOffset = landingRef.current.offsetTop;
       const workOffset = workRef.current.offsetTop;
       const infoOffset = infoRef.current.offsetTop;
+      const contactOffset = contactRef.current.offsetTop;
       let activeSection = "";
       if (scrollPosition > landingOffset && scrollPosition < workOffset) {
         activeSection = "landing";
       } else if (scrollPosition > workOffset && scrollPosition < infoOffset) {
         activeSection = "work";
-      } else {
+      }
+      else if (scrollPosition > infoOffset && scrollPosition < contactOffset) {
         activeSection = "info";
+      }
+      else {
+        activeSection = "contact";
       }
       setActiveSection(activeSection);
     };
@@ -49,11 +55,12 @@ const Page = () => {
           landingRef={landingRef}
           workRef={workRef}
           infoRef={infoRef}
+          contactRef={contactRef}
         />
         <Landing reference={landingRef} scrollToRef={scrollToRef} workRef={workRef} />
         <Work reference={workRef} />
         <Info reference={infoRef} />
-        {/* <Contact /> */}
+        <Contact reference={contactRef} />
       </div>
     </div>
   );
