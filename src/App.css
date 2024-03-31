@@ -80,8 +80,8 @@ body {
 }
 
 .width-img-ig-green {
-  width: 67px;
-  height: 66px;
+  width: 52px;
+  height: 50px;
 }
 
 .width-img-dc-green {
@@ -377,6 +377,12 @@ body {
 .active {
   color: rgba(62, 195, 114, 1) !important;
   position: relative;
+}
+
+.background-contact {
+  background-image: url(./assets/contact/background-contact.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 

@@ -1,6 +1,6 @@
 import Vector from "../assets/Vector.png";
 
-const Landing = ({ reference, scrollToRef, workRef }) => {
+const Landing = ({ reference, scrollToRef, workRef,contactRef }) => {
   return (
     <div ref={reference} className="mt-3 pb-5">
       <div className="background-general ht-auto">
@@ -28,7 +28,7 @@ const Landing = ({ reference, scrollToRef, workRef }) => {
             </p>
           </div>
           <div className="d-flex align-items-center mt-5 justify-content-start">
-            <button className="btn btn-light fs-32 rounded-pill fw-semibold ps-5 pe-5 pt-2 pb-2">
+            <button className="btn btn-light fs-32 rounded-pill fw-semibold ps-5 pe-5 pt-2 pb-2" onClick={()=>scrollToRef(contactRef)}>
               Let's chat!
             </button>
             <div

@@ -88,7 +88,9 @@ const NavBar = ({
               : "d-flex align-items-center me-5"
           }
         >
-          <img className="me-4 width-img-dc" src={discord} alt="discord" />
+          <a href="https://discord.com/users/452667114126442497" target="_blank">
+            <img className="me-4 width-img-dc" src={discord} alt="discord" />
+          </a>
           <div className="linea me-2 ms-2"></div>
           <a href="https://www.instagram.com/jmartorano_/" target="_blank">
             <img

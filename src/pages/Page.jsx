@@ -57,7 +57,7 @@ const Page = () => {
           infoRef={infoRef}
           contactRef={contactRef}
         />
-        <Landing reference={landingRef} scrollToRef={scrollToRef} workRef={workRef} />
+        <Landing reference={landingRef} scrollToRef={scrollToRef} workRef={workRef} contactRef={contactRef} />
         <Work reference={workRef} />
         <Info reference={infoRef} />
         <Contact reference={contactRef} />

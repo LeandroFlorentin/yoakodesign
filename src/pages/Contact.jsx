@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import Input from "../components/Input/Input";
-import Instagram from "../assets/contact/discord-green.png";
-import discord from "../assets/contact/instagram-green.png";
+import discord from "../assets/contact/discord-green.png";
+import Instagram from "../assets/contact/instagram-green.png";
 const Contact = ({ reference }) => {
   const { register, setValue, getValues, formState: { errors }, handleSubmit } = useForm({
     defaultValues: {
@@ -14,10 +14,10 @@ const Contact = ({ reference }) => {
     console.log(e)
   }
   return (
-    <div className='ht-100 mt-120px text-light' ref={reference}>
+    <div className='h-auto text-light background-contact mt-120px' ref={reference}>
       <div className="container d-flex justify-content-center">
-        <div className="row col-11">
-          <h1 className="fw-bold text-start contact-title mb-5">Get in touch</h1>
+        <div className="row col-11 mt-120px">
+          <h1 className="fw-bold text-start contact-title mb-5">Get in touch.</h1>
           <div className="col-12 col-md-6">
             <div className="col-8">
               <h4>Send me an E-mail</h4>
@@ -48,20 +48,20 @@ const Contact = ({ reference }) => {
             <p className="ti-30 col-8 ms-3">You can also contact me on my social media! I use instagram and discord.</p>
           </div>
           <div className="col-12 col-md-6 mt-120px">
-            <div className="border rounded-5 d-flex col-7 p-1">
+            <a href="https://www.instagram.com/yo_ako/" target="_blank" className="border text-decoration-none rounded-5 d-flex align-items-center col-12 col-lg-7 p-1">
               <img src={Instagram} className="width-img-dc-green" alt="instagram" />
               <div className="ps-4">
-                <small>Instagram</small>
-                <h4>@yo_ako</h4>
+                <small className="text-light" style={{ textDecoration: "none" }}>Instagram</small>
+                <h4 className="text-light">@yo_ako</h4>
               </div>
-            </div>
-            <div className="border rounded-5 d-flex col-7 mt-3 p-1">
+            </a>
+            <a href="https://discord.com/users/452667114126442497" target="_blank" className="border text-decoration-none rounded-5 d-flex align-items-center col-12 col-lg-7 mt-3 p-1">
               <img src={discord} className="width-img-ig-green" alt="discord" />
               <div className="ps-3">
-                <small>Discord</small>
-                <h4>@yoako_</h4>
+                <small className="text-light">Discord</small>
+                <h4 className="text-light">@yoako_</h4>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
