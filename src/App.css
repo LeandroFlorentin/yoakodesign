@@ -79,6 +79,16 @@ body {
   background-size: cover;
 }
 
+.width-img-ig-green {
+  width: 67px;
+  height: 66px;
+}
+
+.width-img-dc-green {
+  width: 58px;
+  height: 56px;
+}
+
 .width-img-ig {
   width: 33px;
   height: 33px;
@@ -224,6 +234,12 @@ body {
   text-align: left;
 }
 
+.contact-title {
+  font-family: "Hanson";
+  font-size: 105px;
+  font-weight: 700;
+}
+
 .logo-about {
   width: 138px;
   height: 42px;
@@ -281,11 +297,15 @@ body {
 }
 
 .mt-120px {
-  margin-top: 120px;
+  margin-top: 120px !important;
 }
 
 .mt-20 {
   margin-top: 20px;
+}
+
+.ti-30 {
+  text-indent: 30px;
 }
 
 .tamano-logo {
@@ -350,10 +370,15 @@ body {
   }
 }
 
+.color-green {
+  color: rgba(62, 195, 114, 1);
+}
+
 .active {
   color: rgba(62, 195, 114, 1) !important;
   position: relative;
 }
+
 
 .active::after {
   content: "";
@@ -525,4 +550,18 @@ body {
 .custom-close {
   color: white !important;
   opacity: 1;
+}
+
+.input-contact {
+  background: transparent;
+  color: white;
+}
+
+.h-text-area {
+  height: 150px;
+  resize: none;
+}
+
+.fs-105 {
+  font-size: 105px;
 }
