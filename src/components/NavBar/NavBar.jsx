@@ -17,34 +17,34 @@ const NavBar = ({
       description: "home",
       valor: "landing",
       className: mediaNav
-        ? "fs-16 text-light pointer col-4 text-center pb-2 position-relative overflow-hidden"
-        : "fs-16 text-light me-6 pointer position-relative overflow-hidden",
+        ? "fs-16 text-light pointer col-4 text-center pb-2 position-relative overflow-hidden navbar-txt"
+        : "fs-16 text-light me-6 pointer position-relative overflow-hidden navbar-txt",
     },
     {
       description: "work",
       valor: "work",
       className: mediaNav
-        ? "fs-16 text-light pointer col-4 text-center pb-2 position-relative overflow-hidden"
-        : "fs-16 text-light me-6 pointer position-relative overflow-hidden",
+        ? "fs-16 text-light pointer col-4 text-center pb-2 position-relative overflow-hidden navbar-txt"
+        : "fs-16 text-light me-6 pointer position-relative overflow-hidden navbar-txt",
     },
     {
       description: "info",
       valor: "info",
       className: mediaNav
-        ? "fs-16 text-light pointer col-4 text-center pb-2 position-relative overflow-hidden"
-        : "fs-16 text-light me-6 pointer position-relative overflow-hidden",
+        ? "fs-16 text-light pointer col-4 text-center pb-2 position-relative overflow-hidden navbar-txt"
+        : "fs-16 text-light me-6 pointer position-relative overflow-hidden navbar-txt",
     },
     {
       description: "contact",
       valor: "contact",
       className: mediaNav
-        ? "fs-16 text-light pointer col-4 text-center pb-2 position-relative overflow-hidden"
-        : "fs-16 text-light me-6 pointer position-relative overflow-hidden",
+        ? "fs-16 text-light pointer col-4 text-center pb-2 position-relative overflow-hidden navbar-txt"
+        : "fs-16 text-light me-6 pointer position-relative overflow-hidden navbar-txt",
     },
   ];
   return (
     <div className="row m-0 p-0 d-flex align-items-center justify-content-between position-sticky nav mt-4">
-      <OffCanvasTop title="Menu" >
+      <OffCanvasTop >
         <div>
           <div className="row d-flex align-items-center justify-content-center h-100 flex-wrap">
             {array.map((value, key) => (

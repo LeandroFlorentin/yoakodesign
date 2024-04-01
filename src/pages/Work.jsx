@@ -122,7 +122,7 @@ const Work = ({ reference }) => {
                 and practical designing.
               </p>
             </div>
-            <button className="btn btn-light col-12 col-md-4 col-lg-3 rounded-pill mt-5">
+            <button className="btn btn-light col-12 col-md-4 col-lg-4 rounded-pill mt-5">
               <span className="contact-text">Contact me</span>
             </button>
             <div className="pt-5">

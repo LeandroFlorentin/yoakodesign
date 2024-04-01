@@ -1,4 +1,4 @@
-const OffCanvasTop = ({ children, title }) => {
+const OffCanvasTop = ({ children }) => {
   return (
     <div className="offcanvas offcanvas-top b-black h-15" tabIndex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
       <div className="offcanvas-body b-black border-bottom-modal">
