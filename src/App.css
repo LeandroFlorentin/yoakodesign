@@ -539,7 +539,7 @@ body {
 }
 
 .b-black {
-  background-color: #000000;
+  background-color: #000000 !important;
 }
 
 .b-white {
@@ -580,6 +580,10 @@ body {
 
 .fs-105 {
   font-size: 105px;
+}
+
+.tamano-menu {
+  font-size: 45px;
 }
 
 @media screen and (max-width:560px) {
