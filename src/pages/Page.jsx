@@ -4,6 +4,7 @@ import NavBar from "../components/NavBar/NavBar.jsx";
 import Work from "./Work.jsx";
 import Info from "./Info.jsx";
 import Contact from "./Contact.jsx";
+import Footer from "../components/Footer/Footer.jsx";
 
 const Page = () => {
   const landingRef = useRef(null);
@@ -47,7 +48,7 @@ const Page = () => {
   }, [activeSection]);
 
   return (
-    <div className="container">
+    <div className="container-lg">
       <div className="div-root">
         <NavBar
           scrollToRef={scrollToRef}
@@ -61,6 +62,7 @@ const Page = () => {
         <Work reference={workRef} />
         <Info reference={infoRef} />
         <Contact reference={contactRef} />
+        <Footer />
       </div>
     </div>
   );

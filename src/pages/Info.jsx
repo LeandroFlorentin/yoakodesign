@@ -7,17 +7,18 @@ import ig from "../assets/svg/instagram.svg";
 import arrow from "../assets/svg/arrow-up-right.svg";
 import flag from "../assets/flag.png";
 import CV from "/CV-MARTORANOPEROZZI.pdf?url";
+import { useMediaQuery } from "react-responsive";
 const Info = ({ reference }) => {
+  const isnt1024px = useMediaQuery({ minWidth: 1024 });
   return (
     <div ref={reference} className="h-auto mb-5">
       <div className="container d-flex text-light mt-120px flex-column gap-7">
-        <div className="d-flex justify-content-between background-info">
-          <div className="d-flex flex-column">
+        <div className="row d-flex justify-content-between background-info">
+          <div className="col-12 col-lg-8 d-flex flex-column">
             <h4 className="info-title">INFO</h4>
             <h6 className="aboutme-title">About me.</h6>
-            <div style={{ width: "661px" }}>
+            <div>
               <br />
-
               <p className="jm-text">
                 I’m Joaquín Martorano, from Argentina!{" "}
                 <img src={flag} className="flag" />
@@ -41,21 +42,20 @@ const Info = ({ reference }) => {
               </p>
             </div>
           </div>
-          <div className="d-flex flex-column-reverse gap-6">
+          <div className="col-12 col-lg-4 d-flex flex-column-reverse gap-6">
             <img src={Profile} alt="profile" className="photo-about" />
             <img src={Logo} alt="logo" className="logo-about" />
           </div>
         </div>
-
-        <div className="d-flex justify-content-between">
-          <button className="btn-contact">
+        <div className="row d-flex justify-content-between">
+          <button className="col-12 col-lg-4 btn-contact">
             <span className="btn-contact-text">
               <a href={CV} target="_blank" className="link">
                 CV RESUME <img src={arrow} />
               </a>
             </span>
           </button>
-          <div className="d-flex layers">
+          <div className={`col-12 col-lg-8 mt-5 mt-lg-0 d-flex layers ${isnt1024px ? "justify-content-end" : "justify-content-center"}`}>
             <a href="https://www.behance.net/joaquinmartora1" target="_blank">
               <img src={be} alt="be layer" className="icon-social" />
             </a>

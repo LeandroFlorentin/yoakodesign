@@ -3,7 +3,7 @@ import Input from "../components/Input/Input";
 import discord from "../assets/contact/discord-green.png";
 import Instagram from "../assets/contact/instagram-green.png";
 const Contact = ({ reference }) => {
-  const { register, setValue, getValues, formState: { errors }, handleSubmit } = useForm({
+  const { register, formState: { errors }, handleSubmit } = useForm({
     defaultValues: {
       name: "",
       email: "",
@@ -27,21 +27,24 @@ const Contact = ({ reference }) => {
             </div>
           </div>
           <form onSubmit={handleSubmit(submitForm)} className="col-12 col-md-6">
-            <div className="mb-3">
+            <div className="mb-2">
               <div className="row">
-                <label className="fw-bold p-0 col-12">Name <small className="color-green">(required)</small></label>
-                <Input className="input-contact border pt-1 pb-1 rounded-4 mt-2 col-12 col-md-5" type="text" register={register} name="name" required={true} />
+                <label className="fw-bold p-0 col-12" htmlFor="name">Name <small className="color-green">(required)</small></label>
+                <Input className="input-contact border pt-1 pb-1 rounded-4 mt-2 col-12 col-md-6" type="text" register={register} name="name" required={true} />
+                {errors.name && <p className="text-danger mb-0">Este campo es obligatorio</p>}
               </div>
-              <div className="row">
-                <label className="fw-bold p-0 col-12">Email <small className="color-green">(required)</small></label>
-                <Input className="input-contact border pt-1 pb-1 rounded-4 mt-2 col-12 col-md-8" type="text" register={register} name="email" required={true} />
+              <div className="row mt-2">
+                <label className="fw-bold p-0 col-12" htmlFor="email">Email <small className="color-green">(required)</small></label>
+                <Input className="input-contact border pt-1 pb-1 rounded-4 mt-2 col-12 col-md-9" type="text" register={register} name="email" required={true} />
+                {errors.email && <p className="text-danger mb-0">Este campo es obligatorio</p>}
               </div>
-              <div className="row">
-                <label className="fw-bold p-0 col-12">Message <small className="color-green">(required)</small></label>
-                <textarea autoFocus={false} className="input-contact h-text-area border rounded-4 mt-2 col-12 col-md-8" type="text" register={register} name="message" required={true} />
+              <div className="row mt-2">
+                <label className="fw-bold p-0 col-12" htmlFor="message">Message <small className="color-green">(required)</small></label>
+                <textarea autoFocus={false} className="input-contact h-text-area border rounded-4 mt-2 col-12 col-md-9" type="text" name="message" {...register("message", { required: true })} />
+                {errors.message && <p className="text-danger mb-0">Este campo es obligatorio</p>}
               </div>
             </div>
-            <button type="submit" className="btn btn-light">Send</button>
+            <button type="submit" className="btn btn-light fw-semibold rounded-5 ps-4 pe-4">Send</button>
           </form>
           <div className="col-12 col-md-6 mt-120px">
             <h3>My social media.</h3>
