@@ -7,7 +7,7 @@ const Footer = () => {
         <a href="https://discord.com/users/452667114126442497" target="_blank">
           <img className="me-4 width-img-ig-footer" src={instagram} alt="instagram" />
         </a>
-        <a href="https://www.instagram.com/jmartorano_/" target="_blank">
+        <a href="https://www.instagram.com/yo_ako/" target="_blank">
           <img className="ms-4 width-img-dc-footer" src={discord} alt="discord" />
         </a>
       </div>

@@ -48,7 +48,7 @@ const Info = ({ reference }) => {
           </div>
         </div>
         <div className="row d-flex justify-content-between">
-          <button className="col-12 col-lg-4 btn-contact">
+          <button className="col-12 col-lg-4 btn btn-light rounded-5">
             <span className="btn-contact-text">
               <a href={CV} target="_blank" className="link">
                 CV RESUME <img src={arrow} />
@@ -65,7 +65,7 @@ const Info = ({ reference }) => {
             >
               <img src={lnk} alt="linkedin layer" className="icon-social" />
             </a>
-            <a href="https://www.instagram.com/jmartorano_/" target="_blank">
+            <a href="https://www.instagram.com/yo_ako/" target="_blank">
               <img src={ig} alt="instagram layer" className="icon-social" />
             </a>
           </div>

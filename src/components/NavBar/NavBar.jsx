@@ -60,7 +60,7 @@ const NavBar = ({
               <img className="me-4 width-img-dc" src={discord} alt="discord" />
             </a>
             <div className="linea me-2 ms-2"></div>
-            <a href="https://www.instagram.com/jmartorano_/" target="_blank">
+            <a href="https://www.instagram.com/yo_ako/" target="_blank">
               <img
                 className="ms-4 width-img-ig"
                 src={instagram}
@@ -119,7 +119,7 @@ const NavBar = ({
             <img className="me-4 width-img-dc" src={discord} alt="discord" />
           </a>
           <div className="linea me-2 ms-2"></div>
-          <a href="https://www.instagram.com/jmartorano_/" target="_blank">
+          <a href="https://www.instagram.com/yo_ako/" target="_blank">
             <img
               className="ms-4 width-img-ig"
               src={instagram}
