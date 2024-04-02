@@ -12,6 +12,7 @@ const SectionVideos = ({ title, images = [] }) => {
                 muted
                 className="tamano-video col-12 col-md-11 mt-4 rounded-4"
                 preload="auto"
+                style={{ background: "black" }}
               >
                 <source src={value} type="video/mp4" />
               </video>
