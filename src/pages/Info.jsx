@@ -11,8 +11,8 @@ import { useMediaQuery } from "react-responsive";
 const Info = ({ reference }) => {
   const isnt1024px = useMediaQuery({ minWidth: 1024 });
   return (
-    <div ref={reference} className="h-auto mb-5">
-      <div className="container d-flex text-light mt-120px flex-column gap-7">
+    <div ref={reference} className="h-auto mb-5 mt-200px">
+      <div className="container d-flex text-light flex-column gap-7">
         <div className="row d-flex justify-content-between background-info">
           <div className="col-12 col-lg-7 d-flex flex-column">
             <h4 className="info-title">INFO</h4>

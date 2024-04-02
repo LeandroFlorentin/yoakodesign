@@ -33,11 +33,8 @@ const Page = () => {
       } else if (scrollPosition > workOffset && scrollPosition < infoOffset) {
         activeSection = "work";
       }
-      else if (scrollPosition > infoOffset && scrollPosition < contactOffset) {
-        activeSection = "info";
-      }
       else {
-        activeSection = "contact";
+        activeSection = "info";
       }
       setActiveSection(activeSection);
     };
@@ -56,7 +53,6 @@ const Page = () => {
           landingRef={landingRef}
           workRef={workRef}
           infoRef={infoRef}
-          contactRef={contactRef}
         />
         <Landing reference={landingRef} scrollToRef={scrollToRef} contactRef={contactRef} />
         <Work reference={workRef} />

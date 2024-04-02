@@ -14,16 +14,16 @@ const Contact = ({ reference }) => {
     console.log(e)
   }
   return (
-    <div className='h-auto text-light background-contact mt-120px' ref={reference}>
+    <div className='h-auto text-light background-contact mt-120px'>
       <div className="container d-flex justify-content-center">
-        <div className="row col-11 mt-120px">
+        <div className="row col-11 mt-200px" ref={reference}>
           <h1 className="fw-bold text-start contact-title mb-5">Get in touch.</h1>
           <div className="col-12 col-md-6">
             <div className="col-12 col-md-10">
               <h4 className="contact-send">Send me an E-mail</h4>
-              <p className="color-green contact-parrafo">I’m always open to negotiations!</p>
-              <p className="ti-30 contact-parrafo">If you would like to find out more about how I can help your business, or if you would like to request a private commission, please fill out this brief form, and I will be in touch shortly. </p>
-              <p className="contact-parrafo">Thank you!</p>
+              <p className="color-green contact-parrafo mt-4">I’m always open to negotiations!</p>
+              <p className="ti-30 contact-parrafo mt-4">If you would like to find out more about how I can help your business, or if you would like to request a private commission, please fill out this brief form, and I will be in touch shortly. </p>
+              <p className="contact-parrafo mt-4">Thank you!</p>
             </div>
           </div>
           <form onSubmit={handleSubmit(submitForm)} className="col-12 col-md-6">
@@ -44,11 +44,11 @@ const Contact = ({ reference }) => {
                 {errors.message && <p className="text-danger mb-0">Este campo es obligatorio</p>}
               </div>
             </div>
-            <button type="submit" className="btn btn-light fw-semibold rounded-5 ps-4 pe-4 contact-parrafo">Send</button>
+            <button type="submit" className="btn btn-light send-contact fw-semibold rounded-5 ps-4 pe-4 contact-parrafo">Send</button>
           </form>
           <div className="col-12 col-md-6 mt-120px">
             <h3 className="contact-send">My social media.</h3>
-            <p className="ti-30 col-8 ms-3 contact-parrafo">You can also contact me on my social media! I use instagram and discord.</p>
+            <p className="ti-30 col-8 ms-3 contact-parrafo mt-5">You can also contact me on my social media! I use instagram and discord.</p>
           </div>
           <div className="col-12 col-md-6 mt-120px">
             <a href="https://www.instagram.com/yo_ako/" target="_blank" className="border text-decoration-none rounded-5 d-flex align-items-center col-12 col-lg-7 p-1">

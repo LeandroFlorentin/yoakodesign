@@ -281,6 +281,14 @@ body {
   font-weight: 700;
 }
 
+.send-contact {
+  font-family: "ArgentumLight" !important;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 27.6px;
+  text-align: left;
+}
+
 .logo-about {
   width: 138px;
   height: 42px;
@@ -342,6 +350,10 @@ body {
 
 .mt-120px {
   margin-top: 120px !important;
+}
+
+.mt-200px {
+  margin-top: 200px !important;
 }
 
 .mt-20 {

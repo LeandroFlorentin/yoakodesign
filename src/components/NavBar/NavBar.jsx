@@ -8,8 +8,7 @@ const NavBar = ({
   activeSection,
   landingRef,
   workRef,
-  infoRef,
-  contactRef
+  infoRef
 }) => {
   const mediaNav = useMediaQuery({ query: "(max-width:426px)" });
   let array = [
@@ -33,14 +32,7 @@ const NavBar = ({
       className: mediaNav
         ? "fs-16 text-light pointer col-4 text-center pb-2 position-relative overflow-hidden navbar-txt"
         : "fs-16 text-light me-6 pointer position-relative overflow-hidden navbar-txt",
-    },
-    {
-      description: "contact",
-      valor: "contact",
-      className: mediaNav
-        ? "fs-16 text-light pointer col-4 text-center pb-2 position-relative overflow-hidden navbar-txt"
-        : "fs-16 text-light me-6 pointer position-relative overflow-hidden navbar-txt",
-    },
+    }
   ];
   return (
     <div className="row m-0 p-0 d-flex align-items-center justify-content-between position-sticky nav">
