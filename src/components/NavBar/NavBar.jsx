@@ -43,7 +43,7 @@ const NavBar = ({
     },
   ];
   return (
-    <div className="row m-0 p-0 d-flex align-items-center justify-content-between position-sticky nav mt-4">
+    <div className="row m-0 p-0 d-flex align-items-center justify-content-between position-sticky nav">
       <OffCanvasTop >
         <div>
           <div className="row d-flex align-items-center justify-content-center h-100 flex-wrap">

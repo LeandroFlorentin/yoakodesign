@@ -70,7 +70,7 @@ body {
 .div-root {
   background-image: url("./assets/fondo-gen.png") !important;
   background-repeat: no-repeat;
-  background-size: contain 120%;
+  background-size: contain;
 }
 
 .background-info {
@@ -275,7 +275,10 @@ body {
   align-self: flex-end;
 }
 
-.photo-about {}
+.photo-about {
+  width: 330px;
+  height: 333px;
+}
 
 .layers {
   gap: 53px;

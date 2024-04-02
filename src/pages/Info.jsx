@@ -14,7 +14,7 @@ const Info = ({ reference }) => {
     <div ref={reference} className="h-auto mb-5">
       <div className="container d-flex text-light mt-120px flex-column gap-7">
         <div className="row d-flex justify-content-between background-info">
-          <div className="col-12 col-lg-8 d-flex flex-column">
+          <div className="col-12 col-lg-7 d-flex flex-column">
             <h4 className="info-title">INFO</h4>
             <h6 className="aboutme-title">About me.</h6>
             <div>
@@ -42,7 +42,7 @@ const Info = ({ reference }) => {
               </p>
             </div>
           </div>
-          <div className="col-12 col-lg-4 d-flex flex-column-reverse gap-6">
+          <div className="col-12 col-lg-5 d-flex flex-column-reverse align-items-end gap-6">
             <img src={Profile} alt="profile" className="photo-about" />
             <img src={Logo} alt="logo" className="logo-about" />
           </div>

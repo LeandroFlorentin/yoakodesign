@@ -43,9 +43,9 @@ const Work = ({ reference }) => {
           public’s attention.
         </p>
         <div>
-          <SectionVideos title="Gaming" images={[1, 2]} />
-          <SectionVideos title="Educational" images={[1, 2]} />
-          <SectionVideos title="Music" images={[1, 2]} />
+          <SectionVideos images={["https://firebasestorage.googleapis.com/v0/b/pagina-lg-simulacion.appspot.com/o/horizontal%2F1.mp4?alt=media&token=0234f56c-23d5-40b9-8932-0b1bcdbb54ee", "https://firebasestorage.googleapis.com/v0/b/pagina-lg-simulacion.appspot.com/o/horizontal%2F2.mp4?alt=media&token=9180bd1c-07c6-4174-90ff-30a3ecc3b4ab"]} />
+          <SectionVideos images={["https://firebasestorage.googleapis.com/v0/b/pagina-lg-simulacion.appspot.com/o/horizontal%2F3.mp4?alt=media&token=112c48b1-394c-4a3b-928a-35c52977592b", "https://firebasestorage.googleapis.com/v0/b/pagina-lg-simulacion.appspot.com/o/horizontal%2F4.mp4?alt=media&token=90c27079-51d8-4d2e-95f7-fde3eb628a33"]} />
+          <SectionVideos images={["https://firebasestorage.googleapis.com/v0/b/pagina-lg-simulacion.appspot.com/o/horizontal%2F5.mp4?alt=media&token=652335e8-b10c-4191-a6c5-663dd5ed9d4a", "https://firebasestorage.googleapis.com/v0/b/pagina-lg-simulacion.appspot.com/o/horizontal%2F6.mp4?alt=media&token=480db2b3-db21-486c-a7e6-67cb1d5007b9"]} />
           <div className="mt-5">
             <h3 className="text-light overflow-hidden video-title">
               Short from edits
@@ -57,12 +57,12 @@ const Work = ({ reference }) => {
               Edits from 30s to 3 minutes. Quality edits adapted to the fastness
               of social media. Attention to detail.
             </p>
-            <div className="d-flex justify-content-around flex-wrap">
+            <div className="row justify-content-around flex-wrap">
               <video
                 autoPlay
                 loop
                 src={"./"}
-                className="edit col-12 col-md-11 mt-5 rounded-4"
+                className="edit col-12 col-md-5 mt-5 rounded-4"
                 style={{ background: "black" }}
               >
                 <source />
@@ -71,7 +71,7 @@ const Work = ({ reference }) => {
                 autoPlay
                 loop
                 src={"./"}
-                className="edit col-12 col-md-11 mt-5 rounded-4"
+                className="edit col-12 col-md-5 mt-5 rounded-4"
                 style={{ background: "black" }}
               >
                 <source />
@@ -80,7 +80,7 @@ const Work = ({ reference }) => {
                 autoPlay
                 loop
                 src={"./"}
-                className="edit col-12 col-md-11 mt-5 rounded-4"
+                className="edit col-12 col-md-5 mt-5 rounded-4"
                 style={{ background: "black" }}
               >
                 <source />
@@ -89,7 +89,7 @@ const Work = ({ reference }) => {
                 autoPlay
                 loop
                 src={"./"}
-                className="edit col-12 col-md-11 mt-5 rounded-4"
+                className="edit col-12 col-md-5 mt-5 rounded-4"
                 style={{ background: "black" }}
               >
                 <source />
