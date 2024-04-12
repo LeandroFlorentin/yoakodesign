@@ -6,14 +6,7 @@ const SectionVideos = ({ title, images = [] }) => {
         {images.map((value, key) => {
           return (
             <div key={key} className="col-12 col-md-6 ps-0 text-center">
-              <video
-                autoPlay
-                loop
-                muted
-                className="tamano-video col-12 col-md-11 mt-4 rounded-4"
-                preload="auto"
-                style={{ background: "black" }}
-              >
+              <video autoPlay loop muted className="tamano-video col-12 col-md-11 mt-4 rounded-4" preload="auto">
                 <source src={value} type="video/mp4" />
               </video>
             </div>
